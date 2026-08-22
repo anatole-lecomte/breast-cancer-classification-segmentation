@@ -51,18 +51,13 @@ Rather than training a single end-to-end model, the project deliberately separat
 .
 ├── README.md
 ├── Applied_AI_project.ipynb   # Full notebook: preprocessing, models, training, both pipelines
-└── report/
-    └── Applied_AI_Report.pdf   # Full write-up: methods, all metrics tables, confusion matrices
+└── Applied_AI_Report.pdf      # Full write-up: methods, all metrics tables, confusion matrices
 ```
 
 The notebook was built for Google Colab (Drive-mounted dataset, GPU runtime) and expects the dataset structure described in the assignment (`training_images/` + `training_metadata.xlsx`), which is not included in this repository as it is course-provided data.
 
 ## Authors
-Politecnico di Milano - Applied AI in Biomedicine
 
-- DAU Lara
-- LECOMTE Anatole
-- LUNEAU Nathan
-
-
+Lara Dau, Anatole Lecomte, Nathan Luneau
+Politecnico di Milano — Applied AI in Biomedicine
 Supervised by Prof. Valentina Corino, TA Meri Ferretti
