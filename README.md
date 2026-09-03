@@ -6,12 +6,12 @@ Deep learning pipelines for classifying breast ultrasound images (benign / malig
 
 ## Overview
 
-Breast cancer is the most commonly diagnosed cancer in women worldwide, and ultrasound is an increasingly used, accessible imaging modality — but one that is highly operator-dependent. This project explores how AI can assist by automating both the detection (classification) and localization (segmentation) of tumors from ultrasound images.
+Breast cancer is the most commonly diagnosed cancer in women worldwide, and ultrasound is an increasingly used, accessible imaging modality. This project explores how AI can assist by automating both the detection (classification) and localization (segmentation) of tumors from ultrasound images.
 
-Rather than training a single end-to-end model, the project deliberately separates the two tasks — training and evaluating classification and segmentation models independently first — before comparing two ways of combining them into a full diagnostic pipeline:
+Rather than training a single end-to-end model, the project deliberately separates the two tasks (training and evaluating classification and segmentation models independently first) before comparing two ways of combining them into a full diagnostic pipeline:
 
 1. **Classify → Segment**: classify each image first (benign / malignant / normal), then segment only the pathological ones. Mimics a doctor's diagnostic workflow.
-2. **Segment → Classify**: segment every image first (as a region-proposal step), then classify benign vs. malignant using the masked region. Reduces the risk of a classifier missing a tumor outright.
+2. **Segment → Classify**: segment every image first (as a region-proposal step), then classify benign vs. malignant using the masked region.
 
 **Dataset**: 1,531 ultrasound images from 968 patients (706 benign, 460 normal, 365 malignant), stratified 90/10 train/validation split.
 
@@ -57,7 +57,10 @@ Rather than training a single end-to-end model, the project deliberately separat
 The notebook was built for Google Colab (Drive-mounted dataset, GPU runtime) and expects the dataset structure described in the assignment (`training_images/` + `training_metadata.xlsx`), which is not included in this repository as it is course-provided data.
 
 ## Authors
-
-Lara Dau, Anatole Lecomte, Nathan Luneau
 Politecnico di Milano — Applied AI in Biomedicine
+
+- Lara Dau
+- Anatole Lecomte
+- Nathan Luneau
+
 Supervised by Prof. Valentina Corino, TA Meri Ferretti
